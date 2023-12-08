@@ -17,4 +17,4 @@ function create_quotes() {
 }
 
 
-window.addEventListener('load', create_quotes());
+// window.addEventListener('load', create_quotes());
