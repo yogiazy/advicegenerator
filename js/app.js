@@ -9,5 +9,4 @@ async function create_quotes() {
     advice_slip.textContent = data.slip.advice;
 }
 
-
 // window.addEventListener('load', create_quotes());
