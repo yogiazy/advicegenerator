@@ -1,12 +1,14 @@
-const advice_id = document.getElementById('advice_id');
-const advice_slip = document.getElementById('advice_slip');
+const $ = (x) => document.querySelector(x);
 
 async function create_quotes() {
-    const quotes_id = Math.floor(Math.random() * 224) + 1;
-    const response = await fetch(`https://api.adviceslip.com/advice/${quotes_id}`);
-    const data = await response.json();
-    advice_id.textContent = data.slip.id;
-    advice_slip.textContent = data.slip.advice;
-}
+    $('#icon_dice').classList.add('rotating');
+    const id = Math.floor(Math.random() * 224) + 1;
+    const res = await fetch(`https://api.adviceslip.com/advice/${id}`);
+    const d = await res.json();
 
-// window.addEventListener('load', create_quotes());
+    setTimeout(() => {
+        $('#advice_id').textContent = d.slip.id;
+        $('#advice_slip').textContent = d.slip.advice;
+        $('#icon_dice').classList.remove('rotating');
+    }, 400);
+}
