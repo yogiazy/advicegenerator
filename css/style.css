@@ -569,6 +569,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -635,6 +639,10 @@ video {
 .bg-neon_green {
   --tw-bg-opacity: 1;
   background-color: hsl(150 100% 66% / var(--tw-bg-opacity));
+}
+
+.bg-\[\'\.\/images\/pattern-divider-mobile\.svg\'\] {
+  background-color: './images/pattern-divider-mobile.svg';
 }
 
 .p-3 {
@@ -807,6 +815,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:w-\[30\%\] {
     width: 30%;
   }
