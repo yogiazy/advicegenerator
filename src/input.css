@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-dark_blue text-white font-['Manrope'];
+}
+
+.attribution { 
+    @apply text-[11px] text-center;
+}
+
+.attribution a { 
+    @apply text-neon_green;
+}
