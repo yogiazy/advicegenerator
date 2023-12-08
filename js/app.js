@@ -1,8 +1,10 @@
+const advice_id = document.getElementById('advice_id');
+const advice_slip = document.getElementById('advice_slip');
+
 function create_quotes() {
     const http = new XMLHttpRequest();
     const quotes_id = Math.floor(Math.random() * 224) + 1;
-    const advice_id = document.getElementById('advice_id');
-    const advice_slip = document.getElementById('advice_slip');
+
     http.open("GET", "	https://api.adviceslip.com/advice/" + quotes_id, true);
     http.send();
     http.onreadystatechange = function () {
@@ -13,3 +15,6 @@ function create_quotes() {
         }
     }
 }
+
+
+window.addEventListener('load', create_quotes());
