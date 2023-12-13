@@ -707,6 +707,15 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  text-align: center;
+}
+
 .hover\:shadow-3xl:hover {
   --tw-shadow: 0 0 10px hsl(150, 100%, 66%);
   --tw-shadow-colored: 0 0 10px var(--tw-shadow-color);

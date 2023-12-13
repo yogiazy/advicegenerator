@@ -17,3 +17,7 @@ body {
 .rotating {
     @apply rotate-180 duration-1000 ease-in-out;
 }
+
+.footer {
+    @apply absolute bottom-8 left-1/2 -translate-x-1/2 text-center;
+}
