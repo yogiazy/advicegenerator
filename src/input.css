@@ -11,7 +11,7 @@ body {
 }
 
 .attribution a {
-    @apply text-neon_green;
+    @apply text-cyan-500;
 }
 
 .rotating {

@@ -544,10 +544,6 @@ video {
   position: absolute;
 }
 
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .left-1\/2 {
   left: 50%;
 }
@@ -697,7 +693,7 @@ body {
 
 .attribution a {
   --tw-text-opacity: 1;
-  color: hsl(150 100% 66% / var(--tw-text-opacity));
+  color: rgb(6 182 212 / var(--tw-text-opacity));
 }
 
 .rotating {
